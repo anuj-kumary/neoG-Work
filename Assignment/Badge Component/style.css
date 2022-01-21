@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 40rem;
+    height: 40rem;
+    position: relative;
+}
+.badge__text{
+   padding: 1.5rem;
+   font-size: 1.7rem;
+   position: relative;
+}
+.badge__number{
+    position: absolute;
+    top: 0;
+    left: 15rem;
+    background-color:#3f51b5;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 700;
+    color: #fff;
+    padding: 1em 0.7em;
+    border-radius: 100vh;
+}
+.badge--large-number{
+    top: 4.7rem;
+    left:14rem ;
+    padding: 1em 0.7em;
+    font-weight: 700;
+    font-size:1.7rem;
+}
+.badge__btn{
+    padding: 1rem 1.3rem;
+    border-radius: 5px;
+    background-color: #3f51b5;
+    border-width: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    position: relative;
+}
+.badge__number-button{
+    position: absolute;
+    top: 9.8rem;
+    right: 12.4rem;
+    background-color:hotpink;
+    font-size: 14px;
+    line-height: 0; 
+    color: #fff;
+    padding: 1em 0.7em;
+    border-radius: 100vh;
+}
+.icon{
+    position: relative;
+    font-size: 2.3rem;
+}
+.badge__number-icon{
+    background-color: #dc143c;
+    position: absolute;
+    top: 23.9rem;
+    left: 16.5rem;
+}
+.btn--hide{
+    background-color: #fcfcfc;
+    border: 1px solid #3f51b5;
+    color: #111;
+}
+.badge--number-right{
+    right: 7rem;
+    background-color: #3f51b5;
+    font-weight: 700;
+    top: 17rem;
+}
