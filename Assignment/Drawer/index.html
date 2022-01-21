@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drawer Component</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="drawer">
+      <p class="drawer__title">Title</p>
+      <p class="drawer__subtext">subtext</p>
+      <li class="drawer__link active">
+        <span><i class="fas fa-inbox"></i></span> Inbox
+      </li>
+      <li class="drawer__link">
+        <span><i class="fas fa-star"></i></span> Star
+      </li>
+      <li class="drawer__link">
+        <span><i class="fas fa-paper-plane"></i></span> Sent Mail
+      </li>
+      <li class="drawer__link">
+        <span><i class="fas fa-envelope-open"></i></span> Drafts
+      </li>
+    </div>
+
+    <script>
+      const header = document.querySelector(".drawer");
+      const btns = header.querySelectorAll(".drawer__link");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+  </body>
 </html>
