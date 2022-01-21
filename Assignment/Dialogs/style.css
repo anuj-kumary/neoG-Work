@@ -94,7 +94,7 @@ li:hover{
  {
     margin: 1rem 1rem;
     height: max-content;
-    width: 300px;
+    width: 350px;
     max-width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -110,6 +110,9 @@ span {
     display: flex;
     align-items: center;
   }
+  label{
+      padding: 0 1rem;
+  }
 .modal_confirmation-items {
     display: flex;
     flex-direction: column;
@@ -120,13 +123,4 @@ span {
     display: flex;
     justify-content: flex-end;
     margin: 0.75rem 0;
-}
-
-.modal-footer > button {
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: 0.2s ease-in-out;
-}  
-.modal-footer > button:hover {
-    background-color: rgba(128, 128, 128, 0.5);
 }
