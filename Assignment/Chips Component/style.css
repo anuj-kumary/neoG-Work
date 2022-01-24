@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+}
+
+.container {
+    width: 40%;
+    margin: 30px auto;
+}
+
+.tag-container {
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 6px;
+    overflow-x: scroll;
+}
+
+.tag-container .tag {
+    height: 30px;
+    margin: 5px;
+    padding: 5px 6px;
+    border-radius: 3px;
+    display: flex;
+    color: #333;
+    align-items: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px #fff;
+    cursor: pointer;
+}
+
+.tag i {
+    font-size: 16px;
+    color: #dc143c;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.tag-container input {
+    padding: 5px;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    font-family: 'Rubik';
+    color: #333;
+    flex: 1;
+}
+
+.material-icons {
+    padding: 0 0 0 0.5rem
+}
