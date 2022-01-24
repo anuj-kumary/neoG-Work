@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.tab-fixed {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  max-width: 100%;
+}
+.slider-tab{
+    width: 100%;
+    overflow-x: scroll;
+}
+.tab {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  background-color: rgba(128, 128, 128, 0.2);
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  outline: none;
+  width: max-content;
+}
+
+.tab:hover {
+  background-color: rgba(137, 43, 226, 0.3);
+}
+
+.tab:focus {
+  border-bottom: 5px solid blueviolet;
+  background-color: rgba(137, 43, 226, 0.5);
+}
